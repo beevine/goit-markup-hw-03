@@ -7,101 +7,106 @@
     <title>Main</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    
 </head>
 
 <body>
-    <header class="page-header">
-        <nav>
-            <a href="./index.html" class="logo"><span class="logo-web">Web</span><span>Studio</span></a>
-            
-            <ul class="site-nav">
-                <li><a class="nav-link current" href="./index.html">Студия</a></li>
-                <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="nav-link" href="#adress">Контакты</a></li>
+    <header class="container page-header">
+        <div class="header-flex">
+            <a class="logo" href="./index.html"><span class="logo-web">Web</span><span>Studio</span></a>
+            <nav>
+                <ul class="site-nav">
+                    <li><a class="nav-link current" href="./index.html">Студия</a></li>
+                    <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="nav-link" href="#adress">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <ul class="site-nav contact">
+                <li class="mail"><a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="contact-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-
-        </nav>
-
-        <ul class="site-nav">
-            <li><a href="mailto:info@devstudio.com" class="contact-item">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contact-item">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
 
     <main>
         <section class="solutions">
-            <h1 class="header-solutions">Эффективные решения<br>для вашего бизнеса</h1>
-            <button type="button" class="order-button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="header-solutions">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="order-button">Заказать услугу</button>
+            </div>
         </section>
 
-        <section class="fundamentals">
-            <h2 hidden>Принципы нашей работы</h2>
-            <ul>
-                <li>
+        <section class="fundamentals container">
+            <h2 class="hidden">Принципы нашей работы</h2>
+            <ul class="fundamentals-list">
+                <li class="fundamentals-item">
                     <h3 class="header-medium">Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
 
-                <li>
+                <li class="fundamentals-item">
                     <h3 class="header-medium">Пунктуальность</h3>
                     <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
 
-                <li>
+                <li class="fundamentals-item">
                     <h3 class="header-medium">Планирование</h3>
                     <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>  
                 </li>
 
-                <li>
+                <li class="fundamentals-item">
                     <h3 class="header-medium">Современные технологии</h3>
                     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
         </section>
 
-        <section class="we-do">
+        <section class="we-do container">
             <h2 class="header-large">Чем мы занимаемся</h2>
-            <ul>
-                <li><img src="./images/img-box-1.jpg" alt="специалист пишет код с использованием двух устройств" width="370"></li>
-                <li><img src="./images/img-box-2.jpg" alt="специалист разрабатывает мобильное приложение" width="370"></li>
-                <li><img src="./images/img-box-3.jpg" alt="графический дизайнер работает на планшете" width="370"></li>
+            <ul class="we-do-list">
+                <li><img class="we-do-item" src="./images/index-box/img-box-1.jpg" alt="специалист пишет код с использованием двух устройств" width="370"></li>
+                <li><img class="we-do-item" src="./images/index-box/img-box-2.jpg" alt="специалист разрабатывает мобильное приложение" width="370"></li>
+                <li><img class="we-do-item" src="./images/index-box/img-box-3.jpg" alt="графический дизайнер работает на планшете" width="370"></li>
             </ul>
         </section>
 
-        <section class="team">
-            <h2 class="header-large">Наша команда</h2>
-            <ul>
-                <li class="team-member">
-                    <img src="./images/img-demianenko.jpg" alt="Игорь Демьяненко" width="270">
-                    <h3 class="header-names">Игорь Демьяненко</h3>
-                    <p>Product Designer</p>
-                </li>
-
-                <li class="team-member">
-                    <img src="./images/img-repina.jpg" alt="Ольга Репина" width="270" >
-                    <h3 class="header-names">Ольга Репина</h3>
-                    <p>Frontend Developer</p>
-                </li>
-
-                <li class="team-member">
-                    <img src="./images/img-tarasov.jpg" alt="Николай Тарасов" width="270" >
-                    <h3 class="header-names">Николай Тарасов</h3>
-                    <p>Marketing</p>
-                </li>
-
-                <li class="team-member">
-                    <img src="./images/img-ermakov.jpg" alt="Михаил Ермаков" width="270" >
-                    <h3 class="header-names">Михаил Ермаков</h3>
-                    <p>UI Designer</p>
-                </li>
-            </ul>
+        <section class="team container">
+            <div>
+                <h2 class="header-large">Наша команда</h2>
+                    <ul class="team-list">
+                        <li class="team-member">
+                            <img class="portrait" src="./images/index-team/img-demianenko.jpg" alt="Игорь Демьяненко" width="270">
+                            <h3 class="header-names">Игорь Демьяненко</h3>
+                            <p class="occupies">Product Designer</p>
+                        </li>
+                        
+                        <li class="team-member">
+                            <img class="portrait" src="./images/index-team/img-repina.jpg" alt="Ольга Репина" width="270">
+                            <h3 class="header-names">Ольга Репина</h3>
+                            <p class="occupies">Frontend Developer</p>
+                        </li>
+                        
+                        <li class="team-member">
+                            <img class="portrait" src="./images/index-team/img-tarasov.jpg" alt="Николай Тарасов" width="270">
+                            <h3 class="header-names">Николай Тарасов</h3>
+                            <p class="occupies">Marketing</p>
+                        </li>
+                        
+                        <li class="team-member">
+                            <img class="portrait" src="./images/index-team/img-ermakov.jpg" alt="Михаил Ермаков" width="270">
+                            <h3 class="header-names">Михаил Ермаков</h3>
+                            <p class="occupies">UI Designer</p>
+                        </li>
+                    </ul>
+            </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <a class="logo" href="./index.html"><span class="logo-web">Web</span><span class="color-reverse">Studio</span></a>
+    <footer class="footer container">
+        <a class="logo margined" href="./index.html"><span class="logo-web">Web</span><span class="color-reverse">Studio</span></a>
         <address id="adress">
             <ul adress class="adress">
                 <li><a class="contact-item color-reverse" href="https://goo.gl/maps/NhzTjcWZaFPtSxreA" target="_blank" rel="noopener norefferer">
