@@ -94,16 +94,11 @@ a {
 
 .contact {
     margin-left: auto;
-    margin-right: 50px;
 }
 
-.contact-item {
+.mail {
     margin-right: 50px;
 }
-
-/* .mail {
-    margin-right: 50px;
-} */
 
 .nav-link:hover,
 .nav-link:focus,
@@ -234,10 +229,6 @@ a {
     margin-right: 30px;
 }
 
-/* .we-do-item:last-child {
-    margin-right: 0px;
-} */
-
 /* team */
 
 .team {
@@ -325,6 +316,7 @@ a {
     margin-right: 8px;
     margin-bottom: 16px;
     padding: 6px 22px;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.88;
@@ -355,7 +347,7 @@ a {
     flex-wrap: wrap;
     /* margin-left: -10px;
     margin-top: -10px; */
-    padding: 0;
+    /* padding: 0; */
     list-style: none;
 }
 
@@ -364,12 +356,8 @@ a {
     margin-bottom: 30px;
 }
 
-.portfolio-list .portfolio-item:nth-child(3) {
-    margin-right: 0;
-}
-
-.portfolio-list .portfolio-item.portfolio-item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+.portfolio-list .portfolio-item:nth-child(3n) {
+    margin-right: -10px;
 }
 
 .portfolio-item {
@@ -393,7 +381,7 @@ a {
 .header-small{             
     font-weight: 700;
     font-size: 18px;
-    line-height: 2;
+    line-height: 2; 
     letter-spacing: 0.06em;
     color: var(--stress-text-color);
 }
