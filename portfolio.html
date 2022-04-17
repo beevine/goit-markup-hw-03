@@ -14,14 +14,14 @@
 </head>
 
 <body>
-    <header class="container page-header">
-        <div class="header-flex">
+    <header class="page-header">
+        <div class="container header-flex">
             <a class="logo" href="./index.html"><span class="logo-web">Web</span><span>Studio</span></a>
             <nav>
                 <ul class="site-nav">
-                    <li><a class="nav-link current" href="./index.html">Студия</a></li>
-                    <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="nav-link" href="#adress">Контакты</a></li>
+                    <li class="site-nav-item"><a class="nav-link" href="./index.html">Студия</a></li>
+                    <li class="site-nav-item"><a class="nav-link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="site-nav-item"><a class="nav-link" href="#adress">Контакты</a></li>
                 </ul>
             </nav>
     
@@ -33,19 +33,17 @@
     </header>
 
     <main>
-        <div class="container portfolio">
-            <section>
+        <section class="container portfolio">
+            <div>
                 <h1 class="hidden">Портфолио</h1>
                 <ul class="filter-buttons">
-                    <li><button type="button" class="button">Все</button></li>
-                    <li><button type="button" class="button">Веб-сайты</button></li>
-                    <li><button type="button" class="button">Приложения</button></li>
-                    <li><button type="button" class="button">Дизайн</button></li>
-                    <li><button type="button" class="button">Маркетинг</button></li>
+                    <li class="button-content"><button class="button" type="button">Все</button></li>
+                    <li class="button-content"><button class="button" type="button">Веб-сайты</button></li>
+                    <li class="button-content"><button class="button" type="button">Приложения</button></li>
+                    <li class="button-content"><button class="button" type="button">Дизайн</button></li>
+                    <li class="button-content"><button class="button" type="button">Маркетинг</button></li>
                 </ul>
-            </section>
-            
-            <div class="container portfolio-container">
+        
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
                         <a href="">
@@ -140,22 +138,23 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        
+        </section>    
     </main>
 
-    <footer class="footer container">
-        <a class="logo margined" href="./index.html"><span class="logo-web">Web</span><span
-                class="color-reverse">Studio</span></a>
-        <address id="adress">
-            <ul class="adress">
-                <li><a class="contact-item color-reverse" href="https://goo.gl/maps/NhzTjcWZaFPtSxreA" target="_blank"
-                        rel="noopener norefferer">
-                        г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a class="contact-item color-transparent" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="contact-item color-transparent" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+    <footer class="footer">
+        <div class="container">
+            <a class="logo margined" href="./index.html"><span class="logo-web">Web</span><span
+                    class="color-reverse">Studio</span></a>
+            <address id="adress">
+                <ul class="adress">
+                    <li><a class="contact-item color-reverse" href="https://goo.gl/maps/NhzTjcWZaFPtSxreA" target="_blank"
+                            rel="noopener norefferer">
+                            г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a class="contact-item color-transparent" href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a class="contact-item color-transparent" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
     
 </body> 
