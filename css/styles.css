@@ -271,6 +271,10 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
+.team-member:last-child {
+    margin-right: 0;
+}
+
 .team-text {
     padding: 30px 0;
 }
@@ -314,7 +318,7 @@ img {
 
     /* portfolio-page */
 
-.container.portfolio {
+.portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -374,15 +378,8 @@ img {
     margin-bottom: 30px;
 }
 
-/* .portfolio-list .portfolio-item:nth-child(3n) {
-    margin-right: 0;
-} */
-
-
-
 .portfolio-item {
     margin: 0 30px 30px 0;
-    width: 370px;
     box-sizing: border-box;
 }
 
